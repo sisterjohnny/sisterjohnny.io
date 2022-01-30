@@ -1,0 +1,90 @@
+body, html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+  overflow: hidden; }
+
+@media screen and (min-width: 1350px) {
+  body {
+    max-width: 1350px;
+    margin: 0 auto; } }
+
+.text-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  display: flex; }
+  .text-container a {
+    transform: rotate(90deg);
+    font-size: 2vh;
+    padding-left: 4px;
+    width: 100%;
+    margin: 5px 0;
+    text-shadow: 3px 3px palegoldenrod; }
+
+a, li {
+  font-family: "Courier New"; }
+
+@keyframes smallerfont {
+  from {
+    font-size: 4vw; }
+  to {
+    font-size: 1vw; } }
+
+.info {
+  z-index: 999999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: brown;
+  background-color: black;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  border-bottom: 10px solid brown;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: smallerfont;
+  animation-iteration-count: 1;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards; }
+  .info ul {
+    list-style: none; }
+
+.info_2 {
+  z-index: 9999999;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: brown;
+  background-color: black;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  border-top: 10px solid black;
+  border-top: 10px solid brown;
+  text-align: center;
+  width: 100%;
+  animation-duration: 3s;
+  animation-name: smallerfont;
+  animation-iteration-count: 1;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards; }
+  .info_2 ul {
+    list-style: none; }
+    .info_2 ul a {
+      color: brown; }
+
+canvas {
+  display: block; }
+
+#canvas_container {
+  width: 100%;
+  height: 100vh; }
