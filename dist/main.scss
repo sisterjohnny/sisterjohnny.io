@@ -10,13 +10,7 @@ body, html {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1350px) {
-  body {
-    max-width: 1350px;
-    margin: 0 auto;
-  }
-  
-}
+
 
 .text-container {
   position: fixed;
@@ -29,8 +23,7 @@ body, html {
     transform: rotate(90deg);
     font-size: 2vh;
     padding-left: 4px;
-    width:  100%; 
-    margin: 5px 0;
+    width:  100%; margin: 5px 0;
     text-shadow: 3px 3px palegoldenrod;
   }
 }
@@ -98,6 +91,7 @@ a, li {
   }
 }
 
+
 canvas {
 display: block;
 }
@@ -107,3 +101,5 @@ width: 100%;
 height: 100vh;
 }
 
+
+@import 'media';

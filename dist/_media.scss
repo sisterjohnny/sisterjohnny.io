@@ -1,0 +1,50 @@
+@media screen and (min-width: 1350px) {
+}
+
+@media screen and (max-width: 900px) {
+  .info, .info_2 {
+    position: relative; 
+    letter-spacing: 1vw;
+  }
+  #canvas_container  {
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+  }
+  .text-container {
+    position: fixed;
+    bottom: 0;
+    top: unset;
+    height: unset;
+    z-index: 999;
+    width: 100%;
+    display: flex; 
+    flex-wrap:  wrap;
+    a {
+      font-size: 4vh;
+      margin: 10px;
+      transform: rotate(0deg);
+      width: auto;
+    }
+  }
+  body  {
+    height: auto;
+    overflow-y: scroll;
+  }
+
+  @keyframes smallerfont {
+    from {
+      font-size: 3vw;
+    }
+
+    to {
+      font-size: 3vw;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1350px) {
+}
+
+
