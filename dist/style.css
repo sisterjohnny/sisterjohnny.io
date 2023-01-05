@@ -11,7 +11,7 @@ body, html {
 
 .text-container {
 position: fixed;
-top: 0;
+margin-top: -8%;
 bottom: 0;
 width: 100%;
 height: 100%;
@@ -19,6 +19,11 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
+.second {
+    margin-bottom: -8%; 
+}
+
+
   .text-container a {
     transform: rotate(90deg);
     font-size: 2vh;
@@ -34,7 +39,7 @@ a, li {
   from {
     font-size: 3vw; }
   to {
-    font-size: 1vw; } }
+    font-size: 1.5vw; } }
 
 .info {
   z-index: 999999;
@@ -88,12 +93,8 @@ canvas {
   height: 100vh; }
 
 @media screen and (max-width: 1300px) {
-    .text-container a {
-        margin-top: 0; 
-        margin-bottom: 0;
-        font-size: 1vw; 
-    }
 }
+
 @media screen and (max-width: 1000px) {
   .info, .info_2 {
     position: relative;
@@ -105,12 +106,17 @@ canvas {
   .text-container {
     position: fixed;
     bottom: 0;
+    left: 0%; 
     top: unset;
     height: unset;
     z-index: 999;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap; }
+    .text-container.second {
+        left: 50%; 
+        
+    }
     .text-container a {
       font-size: 4vh;
       margin: 10px;
@@ -122,4 +128,4 @@ canvas {
     from {
       font-size: 3vw; }
     to {
-      font-size: 12px; } } }
+      font-size: 18px; } } }
