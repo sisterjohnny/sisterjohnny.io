@@ -1,3 +1,11 @@
+ul {
+    padding-left: 0; 
+}
+ 
+
+a, p {
+    word-break: break-all;
+}
 body, html {
   width: 100%;
   padding: 0;
@@ -128,4 +136,4 @@ canvas {
     from {
       font-size: 3vw; }
     to {
-      font-size: 18px; } } }
+      font-size: 22px; } } }
