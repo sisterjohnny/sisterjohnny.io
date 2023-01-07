@@ -114,7 +114,10 @@ a, p {
     letter-spacing: 1vw; }
   #canvas_container {
     position: fixed;
-    z-index: 0; }
+    top: 143px; 
+    bottom: unset!important; 
+}
+
   .text-container {
     position: relative;
     bottom: 0;
