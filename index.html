@@ -10,14 +10,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
 <style>
-  .text-columns {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+.text-container {
+  position: fixed;
   width: 100%;
-  box-sizing: border-box;
-  padding: 0 2rem;
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  z-index: 999;
 }
+
+.text-container.first {
+  top: 38%;
+}
+
+.text-container.second {
+  top: 52%;
+}
+
+.text-container.third {
+  top: 66%;
+}
+
+.text-container a {
+  transform: rotate(90deg);
+  font-size: 2vh;
+  padding-left: 4px;
+  margin: 5px 0;
+  text-shadow: 3px 3px palegoldenrod;
+  white-space: nowrap;
+  width: auto;
+}
+
 
 .text-container {
   min-width: 0;
@@ -72,8 +97,8 @@
   </ul>
 </div>
 
-  <div class="text-columns">
-  <div class="text-container">
+
+  <div class="text-container first">
      <a href="https://staalplaat.bandcamp.com/album/bananskole-dage" target="_blank">kids</a>
   <a href="https://drive.google.com/file/d/1v5qytWxNJp-YXJko5zWmUNZHvGiPQt_2/view?usp=sharing" target="_blank">Set</a>
   <a href="https://groovecafe.bandcamp.com/album/100-pro-monarchist-x-tra-kone-radio" target="_blank">cool</a>
@@ -115,7 +140,7 @@
   <a href="https://bibliotek.dk/materiale/chickenwings_nynne-roberta-pedersen-pedersen/work-of%3A870970-basis%3A139197747?type=bog" target="_blank">KYLLINGEVINGER</a>
   <a href="./src/images/min_bedste_ven.jpg" target="_blank"><img src="./src/images/min_bedste_ven_small.jpeg" style="width: 50px; height: 20px;"></a>
   </div>
-</div>
+
 
 
 <div id="canvas_container"></div>
