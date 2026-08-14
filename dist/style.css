@@ -120,9 +120,12 @@ canvas {
 @media screen and (max-width: 700px) {
     #canvas_container {
         bottom: unset; 
-        
     }
+      .text-columns {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 
 
@@ -141,21 +144,66 @@ a, p {
     bottom: unset!important; 
 }
 
+  @media screen and (max-width: 1000px) {
+  a, p {
+    word-break: break-all;
+  }
+
+  .info, .info_2 {
+    position: relative;
+    letter-spacing: 1vw;
+  }
+
+  #canvas_container {
+    position: fixed;
+    top: 143px;
+    bottom: unset !important;
+  }
+
+  .text-columns {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
   .text-container {
     position: relative;
-    bottom: 0;
-    height: 100%;
-    left: 0%; 
-    top: unset;
-    z-index: 999;
     width: 100%;
+    min-width: 0;
+    height: auto;
     display: flex;
-    flex-wrap: wrap; }
-    .text-container a {
-      font-size: 4vh;
-      margin: 10px;
-      transform: rotate(0deg);
-      width: auto; }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .text-container a {
+    font-size: 4vh;
+    margin: 10px;
+    transform: rotate(0deg);
+    width: auto;
+  }
+
+      
+
+  body {
+    overflow-y: scroll;
+  }
+
+  @keyframes smallerfont {
+    from {
+      font-size: 3vw;
+    }
+    to {
+      font-size: 22px;
+    }
+  }
+}
+
   body {
     overflow-y: scroll; }
   @keyframes smallerfont {
