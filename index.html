@@ -5,12 +5,52 @@
   <title></title>
   <link rel="stylesheet" href="./dist/style.css" media="all">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-<script src="src/js/script.js"></script>
 
+<style>
+  .text-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+
+.text-container {
+  min-width: 0;
+}
+
+.text-container a {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.text-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .text-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .text-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -32,8 +72,9 @@
   </ul>
 </div>
 
-<div class="text-container">
-  <a href="https://staalplaat.bandcamp.com/album/bananskole-dage" target="_blank">kids</a>
+  <div class="text-columns">
+  <div class="text-container">
+     <a href="https://staalplaat.bandcamp.com/album/bananskole-dage" target="_blank">kids</a>
   <a href="https://drive.google.com/file/d/1v5qytWxNJp-YXJko5zWmUNZHvGiPQt_2/view?usp=sharing" target="_blank">Set</a>
   <a href="https://groovecafe.bandcamp.com/album/100-pro-monarchist-x-tra-kone-radio" target="_blank">cool</a>
   <a href="https://open.spotify.com/episode/7vSP3PuN1G2uBmj5XVCs1G?utm_medium=share&utm_source=linktree" target="_blank">ART</a>
@@ -43,7 +84,10 @@
   <a href="./src/images/kiddicraft.jpg" target="_blank"><img src="./src/images/kiddicraft_small.jpeg" style="width: 50px; height: 20px"></a>
   <a href="./src/gennem_vinduer.mov" target="_blank">Gennem vinduer</a>
   <a href="https://forfatterweb.dk/pedersen-nynne-roberta-pedersen" target="_blank">web</a>
-  <a href="https://www.information.dk/kultur/anmeldelse/2024/11/nynne-roberta-pedersen-pedersens-digtning-viser-paa-alvorlig-fjollet-vis-vaere-helt-anderledes" target="_blank">INFORMATION</a>
+  </div>
+
+  <div class="text-container second">
+     <a href="https://www.information.dk/kultur/anmeldelse/2024/11/nynne-roberta-pedersen-pedersens-digtning-viser-paa-alvorlig-fjollet-vis-vaere-helt-anderledes" target="_blank">INFORMATION</a>
    <a href="https://www.sorgogsamfund.dk" target="_blank">SOS!!!!</a>
   
    <a href="https://www.instagram.com/tirsdagsgruppen_avnstrup/" target="_blank">support</a>
@@ -51,15 +95,15 @@
   <a href="https://antipyrine.dk/products/nynne-roberta-pedersen-pedersen-vi-hopper-pa-akander?_pos=1&_sid=04d0cefe0&_ss=r" target="_blank">look.book</a>
   <a href="https://filedn.eu/lXmupNcaEqUBgEoxFYYf9NY/Nynne/cling%20to%20the%20body.mov" target="_blank">Cling to the body</a>
   <a href="https://antipyrine.dk/collections/alle/products/sommerfuglens-forbandelse?_su_rec=lx6dUJmq4sDIglzz-UETwmNvTXo7XgHjdnknJnVNJbhB1D394wolxKqFmB7kf8R5nH242-zwC2hTotSo9kMm4XogX1iKBBNJM9M-ILKxyz5k0HUP-Lb6vUuVooJW1CZHylOv_7ktISKxcAAXhBrrzVpH3rJO1-3pTAdQlZ5kLK_fKUl1Db5uxHPt1y31Nvn9G170o6TEqgQ6sShm4mR1x9RSvNdPp5ntDwElDiogYUa86_spVKinFsdM1eE&_su_rec_id=5d883fd0-4305-452d-807b-3e0075242deb-1781018843" target="_blank">LORCA! FOTO FILM MANUS</a>
-</div>
-
-<div class="text-container second">
-  <a href="./src/images/image_123.JPG" target="_blank">FEMIDOMEN . COM</a>
+ <a href="./src/images/image_123.JPG" target="_blank">FEMIDOMEN . COM</a>
   <a href="https://politiken.dk/ibyen/scene/article5649830.ece" target="_blank">TEATERTUGT.BETTYNANSEN 2016</a>
   <a href="https://podcastforsamtidskunst.podbean.com/e/halvt-urne-halvt-gral/" target="_blank">Samtidskunst</a>
   <a href="https://www.weekendavisen.dk/2023-23/boeger/laeg-dine-haender-paa-mit-kampberedte-ansigt" target="_blank">tak</a>
   <a href="./src/images/kakkelakker.JPG" target="_blank">Kakerlakker MM</a>
-  <a href="https://www.youtube.com/watch?v=iEGLVqWJz4s" target="_blank">Trailer</a>
+  </div>
+
+  <div class="text-container third">
+    <a href="https://www.youtube.com/watch?v=iEGLVqWJz4s" target="_blank">Trailer</a>
   <a href="https://www.youtube.com/watch?v=nQRGP2FqhoM" target="_blank">KØBINDIKKE</a>
   <a href="https://www.aveny-t.dk/forestillinger/fuck-you-account" target="_blank">Forestilling</a>
   <a href="https://m.youtube.com/watch?v=qkB6sTCZyoI" target="_blank">DK</a>  
@@ -70,10 +114,12 @@
   <a href="./src/images/i_himlen_2_small.jpeg" target="_blank"><img src="./src/images/i_himlen_2.jpg" style="width: 50px; height: 20px;"></a>
   <a href="https://bibliotek.dk/materiale/chickenwings_nynne-roberta-pedersen-pedersen/work-of%3A870970-basis%3A139197747?type=bog" target="_blank">KYLLINGEVINGER</a>
   <a href="./src/images/min_bedste_ven.jpg" target="_blank"><img src="./src/images/min_bedste_ven_small.jpeg" style="width: 50px; height: 20px;"></a>
+  </div>
 </div>
 
+
 <div id="canvas_container"></div>
-  
+ <script src="src/js/script.js"></script> 
 </body>
 
 </html>
